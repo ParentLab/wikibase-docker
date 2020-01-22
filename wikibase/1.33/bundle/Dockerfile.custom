@@ -1,0 +1,5 @@
+FROM wikibase/wikibase:1.33-bundle
+
+COPY LocalSettings.php.wikibase-bundle-custom.template /LocalSettings.php.wikibase-bundle-custom.template
+RUN cat /LocalSettings.php.wikibase-bundle-custom.template >> /LocalSettings.php.template && rm /LocalSettings.php.wikibase-bundle-custom.template
+

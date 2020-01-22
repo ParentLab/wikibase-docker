@@ -4,6 +4,9 @@ ${DOLLAR}wgGroupPermissions['sysop']['mwoauthproposeconsumer'] = true;
 ${DOLLAR}wgGroupPermissions['sysop']['mwoauthmanageconsumer'] = true;
 ${DOLLAR}wgGroupPermissions['sysop']['mwoauthviewprivate'] = true;
 ${DOLLAR}wgGroupPermissions['sysop']['mwoauthupdateownconsumer'] = true;
+${DOLLAR}wgGroupPermissions['*']['edit'] = false;
+${DOLLAR}wgGroupPermissions['*']['createaccount'] = false;
+
 
 # WikibaseImport
 require_once "${DOLLAR}IP/extensions/WikibaseImport/WikibaseImport.php";
@@ -23,3 +26,6 @@ wfLoadExtension( 'cldr' );
 
 # EntitySchema
 wfLoadExtension( 'EntitySchema' );
+
+# Logo
+${DOLLAR}wgLogo = "https://static.wixstatic.com/media/7c44cd_cd408751dbf04ec3b2c5b24dfb2dbc55~mv2.png/v1/fill/w_156,h_48,al_c,q_85,usm_0.66_1.00_0.01/7c44cd_cd408751dbf04ec3b2c5b24dfb2dbc55~mv2.webp"
