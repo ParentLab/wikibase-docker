@@ -9,3 +9,19 @@ ${DOLLAR}wgLogo = "https://static.wixstatic.com/media/7c44cd_cd408751dbf04ec3b2c
 # sitelink empty
 ${DOLLAR}wgWBRepoSettings['siteLinkGroups'] = [];
 ${DOLLAR}wgWBRepoSettings['specialSiteLinkGroups'] = [];
+
+# string limits
+${DOLLAR}wgWBRepoSettings['string-limits'] = [
+    'multilang' => [
+        'length' => 4000,
+    ],
+    'VT:monolingualtext' => [
+        'length' => 4000,
+    ],
+    'VT:string' => [
+        'length' => 4000,
+    ],
+    'PT:url' => [
+        'length' => 500,
+    ],
+];
