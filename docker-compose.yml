@@ -13,7 +13,7 @@ version: '3'
 
 services:
   wikibase:
-    image: dmks/wikibase:1.33-bundle
+    image: wikibase:latest
     links:
       - mysql
     ports:
@@ -45,6 +45,9 @@ services:
       - DB_PASS=sqlpass
       - DB_NAME=my_wiki
       - QS_PUBLIC_SCHEME_HOST_AND_PORT=http://localhost:9191
+      # Email sender
+      - SENDER_EMAIL=shared@parentlab.com
+      - SENDER_PASSWORD=oQZzKVZQLvmnRPPck4AQTLEt
   mysql:
     image: mariadb:10.3
     restart: unless-stopped

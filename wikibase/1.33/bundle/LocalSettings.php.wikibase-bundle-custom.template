@@ -25,3 +25,15 @@ ${DOLLAR}wgWBRepoSettings['string-limits'] = [
         'length' => 500,
     ],
 ];
+
+# email
+${DOLLAR}wgEnableEmail = true;
+
+${DOLLAR}wgSMTP = [
+	'host'     => "ssl://smtp.gmail.com",
+	'IDHost'   => "parentlab.com",
+	'port'     => 465,                
+	'auth'     => true,           
+	'username' => ${DOLLAR}_ENV["SENDER_EMAIL"],    
+	'password' => ${DOLLAR}_ENV["SENDER_PASSWORD"]     
+];
