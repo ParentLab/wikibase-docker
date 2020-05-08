@@ -13,13 +13,13 @@ ${DOLLAR}wgWBRepoSettings['specialSiteLinkGroups'] = [];
 # string limits
 ${DOLLAR}wgWBRepoSettings['string-limits'] = [
     'multilang' => [
-        'length' => 4000,
+        'length' => 40000,
     ],
     'VT:monolingualtext' => [
-        'length' => 4000,
+        'length' => 40000,
     ],
     'VT:string' => [
-        'length' => 4000,
+        'length' => 40000,
     ],
     'PT:url' => [
         'length' => 500,
