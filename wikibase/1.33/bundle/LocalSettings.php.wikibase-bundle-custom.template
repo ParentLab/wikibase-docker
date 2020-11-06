@@ -37,3 +37,6 @@ ${DOLLAR}wgSMTP = [
 	'username' => ${DOLLAR}_ENV["SENDER_EMAIL"],    
 	'password' => ${DOLLAR}_ENV["SENDER_PASSWORD"]     
 ];
+
+# runJobRate
+${DOLLAR}wgJobRunRate = 100;
